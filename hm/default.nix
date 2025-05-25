@@ -1,0 +1,7 @@
+{
+  imports = [
+    ./cmd
+    ./gui
+    ./sys
+  ];
+}

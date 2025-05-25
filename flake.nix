@@ -1,0 +1,62 @@
+{
+  description = "My system configuration";
+
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    
+    home-manger = {
+	    url = "github:nix-community/home-manager";
+    };
+
+    stylix = {
+      url = "github:danth/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    spicetify-nix = {
+      url = "github:Gerg-L/spicetify-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    nvf = {
+      url = "github:notashelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    ags = {
+      url = "github:aylur/ags";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    disko = {
+      url = "github:nix-community/disko";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
+
+  outputs = { nixpkgs, home-manager, stylix, nvf, disko, ... }@inputs: {
+    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    	system = "x86_64-linux";
+	    modules = [ 
+	      ./hosts/desktop/configuration.nix
+      ];
+    };
+
+    homeConfigurations.anton = home-manager.lib.homeManagerConfiguration {
+	    pkgs = nixpkgs.legacyPackages."x86_64-linux";
+	    extraSpecialArgs = { inherit inputs; };
+	    modules = [
+	      ./hosts/desktop/home.nix 
+	      stylix.homeModules.stylix
+        inputs.spicetify-nix.homeManagerModules.default
+	      nvf.homeManagerModules.default
+	      inputs.ags.homeManagerModules.default
+	    ];
+    };
+  };
+}
