@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   imports = [
     ./boot.nix
     ./keymap.nix
@@ -10,4 +10,6 @@
     ./timezone.nix
     ./user.nix
   ];
+
+  environment.systemPackages = with pkgs; [ home-manager ]; 
 }
