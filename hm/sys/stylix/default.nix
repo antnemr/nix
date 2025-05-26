@@ -5,7 +5,7 @@
     #   base16Scheme = "${pkgs.base16-schemes}/share/themes/atelier-sulphurpool.yaml";
   
     cursor.package = pkgs.bibata-cursors;
-    cursor.name = "Bibata-Original-Classic";
+    cursor.name = "Bibata-Modern-Ice";
   
     image = ./lanterns_01.jpg;
 
@@ -36,8 +36,6 @@
       popups = 10;
     };
     
-    targets.firefox.profileNames = [ "anton" ];
-
     enable = true;
   };
 }
