@@ -8,7 +8,6 @@
     diff-so-fancy
     imv
     unar
-    nix-search-tv
   ];
 
   imports = [

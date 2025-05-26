@@ -5,6 +5,7 @@
     localsend
   ];
   imports = [
+    ./gaming
     ./browsers
     ./wlogout.nix
     ./flameshot.nix

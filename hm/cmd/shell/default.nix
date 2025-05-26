@@ -1,4 +1,5 @@
-{ lib, ... }: {
+{ lib, pkgs, ... }: 
+{
   imports = [
     ./starship.nix
   ];
@@ -12,7 +13,6 @@
     shellAliases = {
       nhs = "nh home switch";
       nos = "nh os switch";
-      ns = "nix-search-tv print | fzf --preview 'nix-search-tv preview {}' --scheme history";
       open = "xdg-open";
       la = "ls -a";
       ll = "ls -l";
