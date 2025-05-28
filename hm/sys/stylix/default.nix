@@ -36,6 +36,8 @@
       popups = 10;
     };
     
+    targets.firefox.profileNames = [ "anton" ];
+
     enable = true;
   };
 }

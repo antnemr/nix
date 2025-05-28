@@ -38,7 +38,7 @@
       
       exec-once = [
 	      "systemctl --user enable --now hyprpolkitagent.service"
-	      "hyprctl setcursor Bibata-Original-Classic 24"
+	      "hyprctl setcursor Bibata-Modern-Ice 24"
         "hyprsunset --temperature 5000"
         "swww-daemon"
       ];
