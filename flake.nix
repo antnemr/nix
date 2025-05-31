@@ -39,17 +39,19 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, stylix, nvf, disko, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, stylix, nvf, disko, ... }@inputs: let 
+    system = "x86_64-linux";
+    pkgs = nixpkgs.legacyPackages.${system};
+  in {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-    	system = "x86_64-linux";
+    	system = system;
 	    modules = [ 
-              disko.nixosModules.disko
+        disko.nixosModules.disko
 	      ./hosts/desktop/configuration.nix
       ];
     };
-
     homeConfigurations.anton = home-manager.lib.homeManagerConfiguration {
-	    pkgs = nixpkgs.legacyPackages."x86_64-linux";
+	    pkgs = pkgs;
 	    extraSpecialArgs = { inherit inputs; };
 	    modules = [
 	      ./hosts/desktop/home.nix 
