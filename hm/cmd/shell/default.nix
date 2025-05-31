@@ -3,6 +3,7 @@
   imports = [
     ./starship.nix
   ];
+
   programs.nushell = {
     enable = true;
 
@@ -20,6 +21,7 @@
       fetch = "fastfetch";
       f = "fastfetch -l none";
       z = "zellij";
+      cat = "bat";
     };
 
     environmentVariables = {
