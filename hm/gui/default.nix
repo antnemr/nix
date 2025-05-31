@@ -3,6 +3,7 @@
     waypaper
     xfce.thunar
     localsend
+    obsidian
   ];
   imports = [
     ./gaming
