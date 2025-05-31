@@ -50,6 +50,7 @@
 	      ./hosts/desktop/configuration.nix
       ];
     };
+
     homeConfigurations.anton = home-manager.lib.homeManagerConfiguration {
 	    pkgs = pkgs;
 	    extraSpecialArgs = { inherit inputs; };

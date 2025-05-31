@@ -1,7 +1,10 @@
-{ pkgs, ... }: 
+{ lib, pkgs, ... }: 
 let
-  sleek-grub-theme = pkgs.sleek-grub-theme.override {
-    withStyle = "dark";
+  virtuaverse = pkgs.fetchFromGitHub {
+    owner = "Patato777";
+    repo = "dotfiles";
+    rev = "cc363921707807d7ad3e36b462f0df793a0fe18a";
+    hash = "sha256-fpXGFNrzbV6K9hoZRX4tGieTLzhpPeGm6wn8CF4OGow=";
   };
 in
 {
@@ -15,8 +18,7 @@ in
         efiSupport = true;
         useOSProber = false;
         gfxmodeEfi = "1920x1080";
-        theme = "${sleek-grub-theme}"; 
-        font = "${sleek-grub-theme}/Poppins-48.pf2";
+        theme = "${virtuaverse}/grub/themes/virtuaverse"; 
       };
     };
   };
