@@ -1,5 +1,10 @@
 {pkgs, ... }: {
   home.packages = with pkgs; [
+    speedtest-cli
+    aria2
+    tre
+    dua
+    navi
     fd
     tldr
     fzf
