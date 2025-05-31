@@ -7,16 +7,10 @@
     bitwarden
   ];
   imports = [
-    ./gaming
     ./browsers
+    ./gaming
+    ./temp
     ./terminals
-    ./wlogout.nix
-    ./flameshot.nix
-    ./gtk.nix
-    ./zathura.nix
-    ./vesktop.nix
-    ./mako.nix
-    ./spicetify.nix
-    ./wofi.nix
+    ./unsorted
   ];
 }
