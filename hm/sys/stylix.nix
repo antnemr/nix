@@ -36,8 +36,10 @@
     };
 
     iconTheme = {
+      enable = true;
       package = pkgs.papirus-icon-theme;
-      name = "Papirus";
+      dark = "Papirus-Dark";
+      light = "Papirus-Light";
     };
     
     targets.firefox.profileNames = [ "anton" ];
