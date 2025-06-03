@@ -4,6 +4,7 @@
     localsend
     obsidian
     bitwarden
+    stremio
   ];
   imports = [
     ./browsers
