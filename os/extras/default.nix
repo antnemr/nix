@@ -1,5 +1,6 @@
 {
   imports = [
+    ./niri.nix
     ./bluetooth.nix
     ./hyprland.nix
     ./keyboard.nix
