@@ -42,8 +42,6 @@
       light = "Papirus-Light";
     };
     
-    targets.firefox.profileNames = [ "anton" ];
-
     enable = true;
   };
 }

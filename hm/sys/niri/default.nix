@@ -1,12 +1,14 @@
 { lib, config, niri, ... }: {
+  imports = [
+    ./binds.nix
+  ];
   programs.niri = {
     enable = true;
     settings = {
-      binds = with config.lib.niri.actions; {
-        "Mod+D".action = spawn "wofi --show run";
-        "Mod+1".action = focus-workspace 1;
-        "Mod+Return".action = spawn "foot";
-        "Mod+Q".action = quit { skip-confirmation=true; };
+      outputs."DP-1" = {
+        mode.height = 1920;
+        mode.width = 1080;
+        mode.refresh = 144.0;
       };
     };
   };
