@@ -2,6 +2,7 @@
   imports = [
     ./binds.nix
   ];
+
   programs.niri = {
     enable = true;
     settings = {
