@@ -1,7 +1,0 @@
-{
-  imports = [
-    ./cmd
-    ./gui
-    ./sys
-  ];
-}
