@@ -1,11 +1,24 @@
-{ pkgs, ... }: 
-
-{
+{ pkgs, ... }: let
+  scheme = "${pkgs.base16-schemes}/share/themes";
+in
+  let
+    sulphur = "${scheme}/atelier-sulphurpool.yaml";
+    black = "${scheme}/black-metal.yaml";
+    caroline = "${scheme}/caroline.yaml";
+    catpuccin = "${scheme}/catpuccin-mocha.yaml";
+    everforest = "${scheme}/everforest-dark-hard.yaml";
+    material-gruvbox = "${scheme}/gruvbox-material-dark-medium.yaml";
+    kanagawa = "${scheme}/kanagawa.yaml";
+    rose-pine = "${scheme}/rose-pine.yaml";
+    tokyo-night = "${scheme}/tokyo-night-dark.yaml";
+  in {
   stylix = {
-      image = pkgs.fetchurl {
+    image = pkgs.fetchurl {
       url = "https://raw.githubusercontent.com/dharmx/walls/refs/heads/main/unsorted/a_group_of_white_lanterns_with_black_writing_on_them.jpg";
       hash = "sha256-+yUcgUKgezEL2XJ098wK1bZ+zPqvniNP4DmJ8qRV2ug=";
     };
+    
+    # base16Scheme = ;
 
     fonts = {
       monospace = {
