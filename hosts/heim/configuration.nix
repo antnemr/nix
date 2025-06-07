@@ -9,7 +9,7 @@
     [ 
       ./disko-config.nix
       ./hardware-configuration.nix
-      ../../os
+      ../../system
     ];
 
   nixpkgs.config.allowUnfree = true;

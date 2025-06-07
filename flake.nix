@@ -44,7 +44,7 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, niri, stylix, nvf, disko, ... }@inputs: let 
+  outputs = { self, nixpkgs, home-manager, stylix, spicetify-nix, nvf, ags, disko, zen-browser, niri, ... }@inputs: let 
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
   in {
@@ -52,7 +52,7 @@
     	system = system;
 	    modules = [ 
         disko.nixosModules.disko
-	      ./hosts/desktop/configuration.nix
+	      ./hosts/heim/configuration.nix
         niri.nixosModules.niri
       ];
     };
@@ -61,7 +61,7 @@
 	    pkgs = pkgs;
 	    extraSpecialArgs = { inherit inputs; };
 	    modules = [
-	      ./hosts/desktop/home.nix 
+	      ./hosts/heim/home.nix 
 	      stylix.homeModules.stylix
         niri.homeModules.niri
         niri.homeModules.stylix
