@@ -10,9 +10,9 @@
     ./browsers
     ./gaming
     ./temp
+    ./stylix
     ./unsorted
     ./fonts.nix
-    ./stylix.nix
     ./xdg.nix
   ];
 }
