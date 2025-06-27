@@ -39,11 +39,6 @@
             format = "{release}";
         }
         {
-            key = "│ {#31}󱄅 pkgs    {#keys}│";
-            type = "packages";
-            format = "{nix-all}";
-        }
-        {
             key = "├───────────┤";
             type = "custom";
         }
