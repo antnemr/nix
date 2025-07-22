@@ -2,7 +2,7 @@
   programs.niri.settings.binds = with config.lib.niri.actions; {
     # Apps
     "Mod+Return".action = spawn "foot";
-    "Mod+D".action = spawn "wofi --show run";
+    "Mod+D".action = spawn "rofi --show drun";
     "Mod+W".action = spawn "zen";
     # "Mod+C".action = spawn "flameshot gui";
     # "Mod+P".action = spawn "wlogout -b 2";

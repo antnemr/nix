@@ -44,7 +44,7 @@
         focus-follows-mouse.enable = true;
         keyboard.xkb.layout = "eu";
         mouse.accel-profile = "flat";
-        warp-mouse-to-focus = true;
+        warp-mouse-to-focus.enable = true;
         workspace-auto-back-and-forth = true;
       };
 
