@@ -1,6 +1,6 @@
 {
   imports = [
-    ./temp.nix
+    ./gaming
     ./core
     ./desktop
     ./hardware
