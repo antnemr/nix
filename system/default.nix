@@ -1,6 +1,5 @@
 {
   imports = [
-    ./gaming
     ./core
     ./desktop
     ./hardware
