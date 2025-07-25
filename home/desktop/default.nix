@@ -7,7 +7,6 @@
     stremio
   ];
   imports = [
-    ./plasma
     ./browsers
     ./gaming
     ./temp
