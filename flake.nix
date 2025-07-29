@@ -23,10 +23,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    ags = {
-      url = "github:aylur/ags";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # ags = {
+    #   url = "github:aylur/ags";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     disko = {
       url = "github:nix-community/disko";
@@ -43,14 +43,19 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    plasma-manager = {
-      url = "github:nix-community/plasma-manager";
+    # plasma-manager = {
+    #   url = "github:nix-community/plasma-manager";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    #   inputs.home-manager.follows = "home-manager";
+    # };
+
+    caelestia-shell = {
+      url = "github:caelestia-dots/shell";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.home-manager.follows = "home-manager";
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, spicetify-nix, nvf, ags, disko, zen-browser, niri, plasma-manager, ... }@inputs: let
+  outputs = { self, nixpkgs, home-manager, stylix, spicetify-nix, nvf, disko, zen-browser, niri, caelestia-shell, ... }@inputs: let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
   in {
@@ -69,7 +74,6 @@
 	    modules = [
 	      ./hosts/heim/home.nix 
 	      stylix.homeModules.stylix
-        inputs.plasma-manager.homeManagerModules.plasma-manager
         niri.homeModules.niri
         niri.homeModules.stylix
         inputs.spicetify-nix.homeManagerModules.default
