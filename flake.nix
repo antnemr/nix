@@ -78,7 +78,6 @@
         niri.homeModules.stylix
         inputs.spicetify-nix.homeManagerModules.default
 	      nvf.homeManagerModules.default
-	      inputs.ags.homeManagerModules.default
 	    ];
     };
   };
