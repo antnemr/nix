@@ -23,11 +23,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # ags = {
-    #   url = "github:aylur/ags";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -43,11 +38,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    plasma-manager = {
-      url = "github:nix-community/plasma-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.home-manager.follows = "home-manager";
-    };
+    # plasma-manager = {
+    #   url = "github:nix-community/plasma-manager";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    #   inputs.home-manager.follows = "home-manager";
+    # };
 
     caelestia-shell = {
       url = "github:caelestia-dots/shell";
@@ -79,7 +74,6 @@
 	    modules = [
 	      ./hosts/heim/home.nix 
 	      stylix.homeModules.stylix
-        inputs.plasma-manager.homeManagerModules.plasma-manager
         niri.homeModules.niri
         niri.homeModules.stylix
         inputs.spicetify-nix.homeManagerModules.default
