@@ -7,8 +7,8 @@
     stremio
   ];
   imports = [
+    ./plasma
     ./browsers
-    ./temp
     ./stylix
     ./unsorted
     ./fonts.nix
