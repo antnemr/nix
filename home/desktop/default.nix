@@ -8,7 +8,6 @@
   ];
   imports = [
     ./shell
-    ./plasma
     ./browsers
     ./stylix
     ./unsorted

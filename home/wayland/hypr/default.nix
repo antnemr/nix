@@ -40,7 +40,7 @@
 	      "systemctl --user enable --now hyprpolkitagent.service"
 	      "hyprctl setcursor Bibata-Modern-Ice 24"
         "hyprsunset --temperature 5000"
-        "swww-daemon"
+        "caelestia shell -d"
       ];
 
       general = {
