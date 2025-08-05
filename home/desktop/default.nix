@@ -17,5 +17,6 @@
     ./xdg.nix
     ./zathura.nix
     ./zen.nix
+    ./wayland
   ];
 }
