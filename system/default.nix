@@ -9,7 +9,6 @@
     ./login.nix
     ./net.nix
     ./nh.nix
-    ./niri.nix
     ./nvidia.nix
     ./pipewire.nix
     ./shell.nix
