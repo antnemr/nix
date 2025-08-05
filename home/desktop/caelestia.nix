@@ -24,7 +24,7 @@
             "showAudio": true,
             "showBattery": false,
             "showBluetooth": true,
-            "showKbLayout": true,
+            "showKbLayout": false,
             "showNetwork": false 
           },
           "workspaces": {
