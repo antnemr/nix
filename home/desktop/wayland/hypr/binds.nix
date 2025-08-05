@@ -26,7 +26,7 @@
       # Shell keybinds
       "$mod,    D,          global, caelestia:launcher"
       "$mod,    R,          exec, qs -c caelestia kill"
-      "$mod,    SHIFT,  R,  exec, qs -c caelestia kill; caelestia shell -d"
+      "$mod     SHIFT,  R,  exec, qs -c caelestia kill; caelestia shell -d"
 
       # Scratchpad
       "$mod,       	    S, 	togglespecialworkspace,  magic"
