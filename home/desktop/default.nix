@@ -7,11 +7,15 @@
     stremio
   ];
   imports = [
-    ./shell
-    ./browsers
-    ./stylix
-    ./unsorted
+    ./caelestia.nix
+    ./flameshot.nix
     ./fonts.nix
+    ./spicetify.nix
+    ./stylix.nix
+    ./vesktop.nix
+    ./vscode.nix
     ./xdg.nix
+    ./zathura.nix
+    ./zen.nix
   ];
 }
