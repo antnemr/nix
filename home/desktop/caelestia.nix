@@ -4,7 +4,7 @@
     inputs.caelestia-cli.packages.${pkgs.system}.default
   ];
 
-  home.file.".config/calestia/shell.json".text =
+  home.file.".config/caelestia/shell.json".text =
     ''
       {
         "general": {
