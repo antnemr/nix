@@ -21,10 +21,10 @@
           "persistent": true,
           "showOnHover": true,
           "status": {
-            "showAudio": false,
+            "showAudio": true,
             "showBattery": false,
             "showBluetooth": true,
-            "showKbLayout": false,
+            "showKbLayout": true,
             "showNetwork": false 
           },
           "workspaces": {

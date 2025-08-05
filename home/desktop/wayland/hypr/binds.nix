@@ -9,7 +9,6 @@
       "$mod,		Return,     exec, $terminal"
       "$mod,		Q,	        killactive,"
       "$mod	    SHIFT,	Q,	exec, uwsm stop"
-      # "$mod,		D,	        exec, $menu --show drun"
       "$mod,		F,	        fullscreen,"
       "$mod,		T,	        togglefloating,"
       "$mod,		G,	        togglegroup,"
@@ -25,9 +24,10 @@
       "$mod,    W,          exec, $browser"
       "$mod,    C,          exec, flameshot gui" 
 
-      # ## Shell keybinds
-      # Launcher
+      # Shell keybinds
       "$mod,    D,          global, caelestia:launcher"
+      "$mod,    SHIFT,  CTRL,  exec, qs -c caelestia kill"
+      "$mod,    ALT,    CTRL,  exec, qs -c caelestia kill; caelestia shell -d"
 
       # Scratchpad
       "$mod,       	    S, 	togglespecialworkspace,  magic"
