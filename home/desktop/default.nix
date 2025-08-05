@@ -7,9 +7,7 @@
     stremio
   ];
   imports = [
-    ./shell
     ./browsers
-    ./gaming
     ./temp
     ./stylix
     ./unsorted

@@ -1,8 +1,8 @@
 {
   imports = [
+    ./nvim
     ./emulators
     ./shell
-    ./nvim
     ./tools
   ];
 }
