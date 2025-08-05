@@ -7,6 +7,7 @@
     stremio
   ];
   imports = [
+    ./shell
     ./plasma
     ./browsers
     ./stylix
