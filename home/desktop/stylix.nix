@@ -20,8 +20,6 @@ in
     
     # base16Scheme = ;
 
-    # targets.zen-browser.profileNames = [ "8yfxlizu.Default Profile" ];
-
     fonts = {
       monospace = {
         package = pkgs.nerd-fonts.jetbrains-mono;
@@ -35,6 +33,10 @@ in
         package = pkgs.dejavu_fonts;
         name = "DejaVu Serif";
       };
+    };
+
+    targets = {
+      zen-browser.enable = false;
     };
 
     fonts.sizes = {
