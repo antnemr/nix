@@ -14,17 +14,17 @@
       };
     };
 
-    panels = [
-      {
-        location = "bottom";
-        iconTasks = {
-          launchers = [
-            "applications:org.kde.dolphin.desktop"
-            "applications:org.kde.konsole.desktop"
-          ];
-        };
-      }
-    ];
+    #panels = [
+    #  {
+    #    location = "bottom";
+    #    iconTasks = {
+    #      launchers = [
+    #        "applications:org.kde.dolphin.desktop"
+    #        "applications:org.kde.konsole.desktop"
+    #      ];
+    #    };
+    #  }
+    #];
 
     shortcuts = {
       kwin = {
