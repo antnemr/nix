@@ -20,7 +20,6 @@
       "$mod, 		J, 	        movefocus, d"
 
       # Apps
-      "$mod,    P,          exec, $power"
       "$mod,    W,          exec, $browser"
       "$mod,    C,          exec, flameshot gui" 
 
