@@ -10,9 +10,9 @@
     ./login.nix
     ./net.nix
     ./nh.nix
+    ./nushell.nix
     ./nvidia.nix
     ./pipewire.nix
-    ./shell.nix
     ./timezone.nix
     ./user.nix
  ];
