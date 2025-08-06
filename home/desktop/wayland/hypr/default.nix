@@ -8,6 +8,7 @@
   imports = [
     ./binds.nix
     ./hyprlock.nix
+    ./hypridle.nix
   ];
 
   wayland.windowManager.hyprland = {
