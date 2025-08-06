@@ -55,7 +55,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, spicetify-nix, nvf, disko, zen-browser, niri, caelestia-shell, caelestia-cli, ... }@inputs: let
+  outputs = { self, nixpkgs, home-manager, stylix, spicetify-nix, nvf, disko, zen-browser, caelestia-shell, caelestia-cli, ... }@inputs: let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
   in {
@@ -64,7 +64,6 @@
 	    modules = [ 
         disko.nixosModules.disko
 	      ./hosts/heim/configuration.nix
-        niri.nixosModules.niri
       ];
     };
 
@@ -74,8 +73,6 @@
 	    modules = [
 	      ./hosts/heim/home.nix 
 	      stylix.homeModules.stylix
-        niri.homeModules.niri
-        niri.homeModules.stylix
         inputs.spicetify-nix.homeManagerModules.default
 	      nvf.homeManagerModules.default
 	    ];
