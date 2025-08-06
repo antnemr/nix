@@ -22,6 +22,7 @@
       f = "fastfetch -l none";
       z = "zellij";
       cat = "bat";
+      vs = "codium";
     };
 
     environmentVariables = {
