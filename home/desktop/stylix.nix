@@ -52,12 +52,12 @@ in
       size = 24;
     };
 
-    iconTheme = {
-      enable = true;
-      package = pkgs.papirus-icon-theme;
-      dark = "Papirus-Dark";
-      light = "Papirus-Light";
-    };
+    # iconTheme = {
+    #   enable = true;
+    #   package = pkgs.papirus-icon-theme;
+    #   dark = "Papirus-Dark";
+    #   light = "Papirus-Light";
+    # };
     
     enable = true;
   };
