@@ -2,7 +2,6 @@
   imports = [
     ./bluetooth.nix
     ./boot.nix
-    ./gaming.nix
     ./hyprland.nix
     ./keyboard.nix
     ./keymap.nix
@@ -13,6 +12,7 @@
     ./nushell.nix
     ./nvidia.nix
     ./pipewire.nix
+    ./steam.nix
     ./timezone.nix
     ./user.nix
  ];
