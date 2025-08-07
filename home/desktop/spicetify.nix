@@ -8,6 +8,7 @@
       enabledExtensions = with spicePkgs.extensions; [
         shuffle
         powerBar
+        adblock
       ];
     };
 }
