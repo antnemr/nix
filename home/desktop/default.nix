@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
+    thunderbird
     pavucontrol
     xfce.thunar
     localsend
