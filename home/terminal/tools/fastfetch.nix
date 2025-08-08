@@ -12,7 +12,7 @@
       display = {
         separator = "";
         constants = [
-          ''│ ''
+          ''\u001b[90m│                                                            │\u001b[60D\u001b[39m''
         ];
       };
 
