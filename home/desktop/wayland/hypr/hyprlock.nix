@@ -5,7 +5,7 @@
       general = {
         disable_loading_bar = true;
         immediate_render = true;
-        hide_cursor = false;
+        hide_cursor = true;
       };
       background = {
         blur_passes = 3;
