@@ -10,7 +10,7 @@
       "$mod,		Q,	        killactive,"
       "$mod	    SHIFT,	Q,	exec, uwsm stop"
       "$mod,		F,	        fullscreen,"
-      "$mod,		T,	        togglefloating,"
+      "$mod,		Space,      togglefloating,"
       "$mod,		G,	        togglegroup,"
       "$mod 	  SHIFT, 	N,  changegroupactive, f"
       "$mod 	  SHIFT, 	P, 	changegroupactive, b"
@@ -22,6 +22,8 @@
       # Apps
       "$mod,    W,          exec, $browser"
       "$mod,    C,          exec, flameshot gui" 
+      "$mod,    V,          exec, codium"
+      "$mod,    T,          exec, thunar"
 
       # Shell keybinds
       "$mod,    D,          global, caelestia:launcher"
