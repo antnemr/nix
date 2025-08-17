@@ -22,7 +22,7 @@ in
       ll = "ls -l";
       y = "yazi";
       ff = "fastfetch -c ${preset}";
-      f = "fastfetch -l none";
+      f = "fastfetch";
       z = "zellij";
       cat = "bat";
       vs = "codium";
