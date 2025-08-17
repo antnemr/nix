@@ -1,4 +1,7 @@
-{ lib, pkgs, ... }: 
+{ lib, pkgs, ... }:
+let
+  preset = ./26.jsonc;
+in
 {
   imports = [
     ./starship.nix
@@ -18,7 +21,7 @@
       la = "ls -a";
       ll = "ls -l";
       y = "yazi";
-      fetch = "fastfetch";
+      ff = "fastfetch -c ${preset}";
       f = "fastfetch -l none";
       z = "zellij";
       cat = "bat";
