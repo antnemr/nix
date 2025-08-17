@@ -9,11 +9,11 @@
     stremio
   ];
   imports = [
+    ./stylix
     ./caelestia.nix
     ./flameshot.nix
     ./fonts.nix
     ./spicetify.nix
-    ./stylix.nix
     ./vesktop.nix
     ./vscode.nix
     ./xdg.nix

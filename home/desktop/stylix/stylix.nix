@@ -11,6 +11,9 @@ in
     kanagawa = "${scheme}/kanagawa.yaml";
     rose-pine = "${scheme}/rose-pine.yaml";
     tokyo-night = "${scheme}/tokyo-night-dark.yaml";
+    birds-of-paradise = "${scheme}/birds-of-paradise.yaml";
+    charcoal-dark = "${scheme}/charcoal-dark.yaml";
+    charcoal-light = "${scheme}/charcoal-light.yaml";
   in {
   stylix = {
     image = pkgs.fetchurl {
@@ -18,7 +21,7 @@ in
       hash = "sha256-+yUcgUKgezEL2XJ098wK1bZ+zPqvniNP4DmJ8qRV2ug=";
     };
     
-    # base16Scheme = ;
+    base16Scheme = ./charcoal-dark.yaml;
 
     fonts = {
       monospace = {
