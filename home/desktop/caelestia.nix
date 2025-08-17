@@ -25,7 +25,7 @@
             "showBattery": false,
             "showBluetooth": true,
             "showKbLayout": false,
-            "showNetwork": true 
+            "showNetwork": false 
           },
           "workspaces": {
             "activeIndicator": true,
