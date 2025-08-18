@@ -28,7 +28,7 @@ in
     base16Scheme = { 
     system = "base16";
     name = "cozy";
-    author = "Anton (https://github.com/morhetz/gruvbox)";
+    author = "Anton";
     variant = "dark";
 
     palette = {
