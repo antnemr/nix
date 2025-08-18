@@ -1,6 +1,6 @@
 { lib, pkgs, ... }:
 let
-  preset = ./26.jsonc;
+  preset = ./preset.jsonc;
 in
 {
   imports = [
