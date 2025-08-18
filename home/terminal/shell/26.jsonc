@@ -49,7 +49,7 @@
       {
         "type": "os",
         "key": "{#90}│ {#93}OS          {#90}│",
-        "format": "{$1}{?pretty-name}{pretty-name}{?}{/pretty-name}{name}{/} {codename}  {#2}[v{version}] [{arch}]"
+        "format": "{$1}{?pretty-name}{pretty-name}{?}{/pretty-name}{name}{/} {codename}"
       },
       {
         "type": "kernel",
@@ -114,28 +114,6 @@
         "showIpv6": false,
         "showMtu": true,
         "format": "{$1}{ifname}: {ipv4}  {#2}[MTU:{mtu}]"
-      },
-      {
-        // localip IPv6
-        "type": "localip",
-        "key": "{#90}│ {#94}Local IPv6  {#90}│",
-        "showPrefixLen": true,
-        "showIpv4": false,
-        "showIpv6": true,
-        "showMtu": true,
-        "format": "{$1}{ifname}: {ipv6}  {#2}[MTU:{mtu}]"
-      },
-      {
-        "type": "publicip",
-        "key": "{#90}│ {#94}Public IPv4 {#90}│",
-        "ipv6": false,
-        "format": "{$1}{ip}  {#2}[{location}]"
-      },
-      {
-        "type": "publicip",
-        "key": "{#90}│ {#94}Public IPv6 {#90}│",
-        "ipv6": true,
-        "format": "{$1}{ip}  {#2}[{location}]"
       },
       // CUSTOM - Button UI bar
       {
