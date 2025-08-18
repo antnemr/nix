@@ -26,12 +26,6 @@
         "format": "{$1}{user-name}  {#2}[{home-dir}]"
       },
       {
-        "type": "users",
-        "key": "{#90}│ {#92}Users       {#90}│",
-        "myselfOnly": false,
-        "format": "{$1}{1}@{host-name}{/host-name}localhost{/}{?client-ip}  {#2}[IP:{client-ip}]{?}  [Login time: {login-time}]"
-      },
-      {
         "type": "datetime",
         "key": "{#90}│ {#92}Datetime    {#90}│",
         "format": "{$1}{year}-{month-pretty}-{day-in-month} {hour-pretty}:{minute-pretty}:{second-pretty}  {#2}[{weekday}] [W{week}] [UTC{offset-from-utc}]"
