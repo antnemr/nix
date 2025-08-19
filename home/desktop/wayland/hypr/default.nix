@@ -45,7 +45,7 @@
       ];
 
       general = {
-        border_size = 2;
+        border_size = 0;
 	      gaps_in = 8;
 	      gaps_out = 20;
         layout = "dwindle";
@@ -77,7 +77,7 @@
       decoration = {
         rounding = 25;
 	      active_opacity = 0.75;
-	      inactive_opacity = 0.65;
+	      inactive_opacity = 0.60;
 	      fullscreen_opacity = 1;
 
         blur = {
