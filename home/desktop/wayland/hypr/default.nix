@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, config, lib, ... }: {
   home.packages = with pkgs; [
     hypridle
     hyprsunset 
@@ -49,8 +49,9 @@
 	      gaps_in = 8;
 	      gaps_out = 20;
         layout = "dwindle";
+        "col.inactive_border" = lib.mkForce "rgb(${config.lib.stylix.colors.base00})";
       };
-      
+
       animations = {
 	      enabled = true;
 	      first_launch_animation = true;
