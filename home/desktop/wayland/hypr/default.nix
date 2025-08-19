@@ -45,7 +45,7 @@
       ];
 
       general = {
-        border_size = 0;
+        border_size = 3;
 	      gaps_in = 8;
 	      gaps_out = 20;
         layout = "dwindle";
