@@ -9,9 +9,9 @@
     stremio
   ];
   imports = [
-    ./caelestia.nix
     ./flameshot.nix
     ./fonts.nix
+    ./quickshell.nix
     ./stylix.nix
     ./spicetify.nix
     ./vesktop.nix
