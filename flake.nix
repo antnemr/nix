@@ -38,24 +38,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # plasma-manager = {
-    #   url = "github:nix-community/plasma-manager";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    #   inputs.home-manager.follows = "home-manager";
-    # };
-
     caelestia-shell = {
       url = "github:caelestia-dots/shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+ };
 
-    caelestia-cli = {
-      url = "github:caelestia-dots/cli";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-  };
-
-  outputs = { self, nixpkgs, home-manager, stylix, spicetify-nix, nvf, disko, zen-browser, caelestia-shell, caelestia-cli, ... }@inputs: let
+  outputs = { self, nixpkgs, home-manager, stylix, spicetify-nix, nvf, disko, zen-browser, caelestia-shell, ... }@inputs: let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
   in {
