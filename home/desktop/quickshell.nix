@@ -1,7 +1,12 @@
-{ pkgs, inputs, ...}: {
+{ pkgs, inputs, ...}: 
+let
+  caelestia-shell = inputs.caelestia-shell.packages."x86_64-linux".default.override {
+    withCli = true;
+  };
+in
+{
   home.packages = [
-    inputs.caelestia-shell.packages.${pkgs.system}.default
-    inputs.caelestia-cli.packages.${pkgs.system}.default
+    caelestia-shell
   ];
 
   home.file.".config/caelestia/shell.json".text =
