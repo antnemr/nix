@@ -29,6 +29,9 @@
       "$mod,    D,          global, caelestia:launcher"
       "$mod,    R,          exec, qs -c caelestia kill"
       "$mod     SHIFT,  R,  exec, qs -c caelestia kill; caelestia shell -d"
+      "$mod     CTRL,   SPACE, global, caelestia:mediaToggle"
+      "$mod,    N,          global, caelestia:clearNotifs"
+
 
       # Scratchpad
       "$mod,       	    S, 	togglespecialworkspace,  magic"
