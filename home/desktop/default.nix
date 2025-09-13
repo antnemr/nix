@@ -6,7 +6,6 @@
     localsend
     obsidian
     bitwarden
-    stremio
   ];
   imports = [
     ./flameshot.nix
