@@ -54,7 +54,6 @@
 
       animations = {
 	      enabled = true;
-	      first_launch_animation = true;
       };
       
       animation = [
